@@ -14,4 +14,8 @@ export default class GameStateService {
       throw new Error('Invalid state');
     }
   }
+
+  clearLocalStorage(key) {
+    this.localStorage.removeItem(key);
+  }
 }
